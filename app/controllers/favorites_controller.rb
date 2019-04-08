@@ -79,7 +79,7 @@ class FavoritesController < ApplicationController
 
     @favorite.dish_id = params.fetch("dish_id")
     @favorite.venue_id = params.fetch("venue_id")
-    @favorite.user_id = params.fetch("user_id")
+    
     @favorite.notes = params.fetch("notes")
 
     if @favorite.valid?
